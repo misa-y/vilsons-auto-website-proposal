@@ -1,2 +1,2 @@
-# vilsons-auto-website-proposal
-A website design proposal for Vilsons Auto
+# Vilsons Auto Website Proposal
+A website design proposal for Vilsons Auto 
