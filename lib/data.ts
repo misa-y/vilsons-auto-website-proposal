@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/site";
+
 export type Machine = {
   id: string;
   sourceSheet: "Manufacturing Facility" | "Tool Room Equipment";
@@ -71,7 +73,7 @@ export const productRanges = [
     material: "Sheet metal components",
     tolerance: "Dimensional accuracy and consistency specified in company profile",
     machineFit: "Power Press 20-250 Ton, spot/projection welding",
-    image: "/vilsons-page-5.png",
+    image: assetPath("/vilsons-page-5.png"),
   },
   {
     title: "Tube Components",
@@ -80,7 +82,7 @@ export const productRanges = [
     material: "Tube metal components",
     tolerance: "Process-driven repeatability specified in company profile",
     machineFit: "CNC Pipe Bending Machine, CO2 Welding 350/400 Amps",
-    image: "/vilsons-page-7.png",
+    image: assetPath("/vilsons-page-7.png"),
   },
   {
     title: "Brackets",
@@ -89,7 +91,7 @@ export const productRanges = [
     material: "Precision sheet metal",
     tolerance: "Dimensional accuracy and consistency specified in company profile",
     machineFit: "Power Press 20-250 Ton, shearing, welding shop",
-    image: "/vilsons-page-5.png",
+    image: assetPath("/vilsons-page-5.png"),
   },
   {
     title: "Chassis Structures",
@@ -98,7 +100,7 @@ export const productRanges = [
     material: "Sheet metal assemblies",
     tolerance: "Strength, durability, and consistency emphasized in profile",
     machineFit: "CO2 Welding, Arc Welding, Power Presses",
-    image: "/vilsons-page-6.png",
+    image: assetPath("/vilsons-page-6.png"),
   },
   {
     title: "Mountings",
@@ -107,7 +109,7 @@ export const productRanges = [
     material: "Sheet metal mountings",
     tolerance: "Quality-controlled dimensional consistency",
     machineFit: "Power Presses, tool room equipment, welding shop",
-    image: "/vilsons-page-5.png",
+    image: assetPath("/vilsons-page-5.png"),
   },
   {
     title: "Suspension Parts",
@@ -116,7 +118,7 @@ export const productRanges = [
     material: "Automotive sheet metal parts",
     tolerance: "Reliability and consistency stated in customer partnership section",
     machineFit: "Press shop, spot welding, projection welding",
-    image: "/vilsons-page-6.png",
+    image: assetPath("/vilsons-page-6.png"),
   },
 ];
 

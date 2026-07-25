@@ -4,24 +4,25 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Factory, Gauge, ShieldCheck } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { metrics, profile } from "@/lib/data";
+import { assetPath } from "@/lib/site";
 
 const slides = [
   {
     title: "Precision Sheet Metal Components",
     copy: "Automotive and industrial fabrication solutions from Pune, Maharashtra.",
-    image: "/vilsons-page-5.png",
+    image: assetPath("/vilsons-page-5.png"),
     icon: Factory,
   },
   {
     title: "20-250 Ton Press Capacity",
     copy: "Power press coverage from compact sheet forms to high-tonnage component forming.",
-    image: "/vilsons-page-6.png",
+    image: assetPath("/vilsons-page-6.png"),
     icon: Gauge,
   },
   {
     title: "ISO 9001:2015 Quality System",
     copy: "Process-driven manufacturing systems focused on dimensional accuracy and consistency.",
-    image: "/vilsons-page-7.png",
+    image: assetPath("/vilsons-page-7.png"),
     icon: ShieldCheck,
   },
 ];

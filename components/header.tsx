@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import type { MouseEvent } from "react";
 import { useState } from "react";
+import { assetPath } from "@/lib/site";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -32,7 +33,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3" onClick={(event) => handleNavClick(event, "/")}>
           <span className="flex h-14 w-64 items-center border border-red-950 bg-white px-3 py-2 shadow-glow sm:w-72">
             <img
-              src="/vilsons-logo-horizontal.png"
+              src={assetPath("/vilsons-logo-horizontal.png")}
               alt="Vilsons Auto"
               className="h-full w-full object-contain"
             />
