@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-inter: "Inter";
+  --font-jetbrains: "JetBrains Mono";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(248, 250, 252, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(248, 250, 252, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 18% 12%, rgba(176, 0, 18, 0.22), transparent 28rem),
+    radial-gradient(circle at 78% 8%, rgba(255, 255, 255, 0.07), transparent 23rem),
+    #070707;
+  background-size: 32px 32px, 32px 32px, auto, auto, auto;
+  color: #e2e8f0;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(176, 0, 18, 0.72);
+  color: white;
+}
+
+.technical-panel {
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  background: linear-gradient(135deg, rgba(7, 7, 7, 0.96), rgba(31, 31, 31, 0.86));
+  border-radius: 4px;
+}
+
+.metal {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.02) 25%, rgba(15,23,42,0.55) 55%, rgba(255,255,255,0.08)),
+    linear-gradient(90deg, rgba(148,163,184,0.08), rgba(226,232,240,0.12), rgba(71,85,105,0.10));
+}
+
+.blueprint {
+  background-image:
+    linear-gradient(rgba(239, 35, 60, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239, 35, 60, 0.16) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.clip-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
+}
