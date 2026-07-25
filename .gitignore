@@ -4,6 +4,7 @@ node_modules/
 work/
 outputs/
 out/
+!docs/
 .DS_Store
 *.log
 .env
